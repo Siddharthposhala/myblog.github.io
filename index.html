@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My-Blog</title>
+        <meta charset="UTF-8">
+        <meta name="siddharthposhalablog" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-family: "Lato", sans-serif;
+            }
+
+            body,
+            html {
+                height: 100%;
+                color: #777;
+                line-height: 1.8;
+            }
+
+            /* Create a Parallax Effect */
+            .bgimg-1,
+            .bgimg-2,
+            .bgimg-3 {
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+         
+           .bgimg-1 {
+                background-image: url("blogg.jpg");
+                min-height: 100%;
+            }
+
+            
+            .bgimg-2 {
+                background-image: url("https://www.w3schools.com/w3images/parallax2.jpg");
+                min-height: 400px;
+            }
+
+           
+            .bgimg-3 {
+                background-image: url("https://www.w3schools.com/w3images/parallax3.jpg");
+                min-height: 400px;
+            }
+
+            .w3-wide {
+                letter-spacing: 10px;
+            }
+
+            .w3-hover-opacity {
+                cursor: pointer;
+            }
+
+            /* Turn off parallax scrolling for tablets and phones */
+            @media only screen and (max-device-width: 1600px) {
+
+                .bgimg-1,
+                .bgimg-2,
+                .bgimg-3 {
+                    background-attachment: scroll;
+                    min-height: 400px;
+                }
+            }
+        </style>
+    </head>
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar" id="myNavbar">
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+                href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="#home" class="w3-bar-item w3-button">HOME</a>
+            <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+            <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> MY-GALLERY</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+                <i class="fa fa-search"></i>
+            </a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+            <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+            <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+            <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+        </div>
+    </div>
+
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+        <div class="w3-display-middle" style="white-space:nowrap;">
+            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MY-BLOG</span>
+        </div>
+    </div>
+
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+        <h3 class="w3-center">ABOUT ME</h3>
+        <p class="w3-center"><em>Hi, I'am Siddharth Poshala</em></p>
+        <p>
+        I am a Btech ComputerScience Student at Vardhaman College of Engineering. I am interested in Programming and 
+        I have no experience. I am a hard worker and I am very motivated to achieve my goals..</p>
+        <div class="w3-row">
+            <div class="w3-col m6 w3-center w3-padding-large">
+                <p><b><i class="fa fa-user w3-margin-right"></i>SIDDHARTH POSHALA</b></p><br>
+                <img src="me1.jpg" class="w3-round w3-image " alt="Photo of Me"
+                    width="500" height="333">
+            </div>
+
+        </div>
+        <p class="w3-large w3-center w3-padding-16">My skills :</p>
+        <p class="w3-wide"><i class="fa fa-laptop"></i>Python</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:65%">65%</div>
+        </div>
+        <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:60%">60%</div>
+        </div>
+        <p class="w3-wide"><i class="fa fa-laptop"></i>C</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:55%">55%</div>
+        </div>
+        <p class="w3-wide"><i class="fa fa-laptop"></i>Java</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:50%">50%</div>
+        </div>
+        <p class="w3-wide"><i class="fa fa-laptop"></i>SQL</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:60%">60%</div>
+        </div>
+    </div>
+
+   <!-- <div class="w3-row w3-center w3-dark-grey w3-padding-16">
+        <div class="w3-quarter w3-section " style="text-align:center">
+            <span class="w3-xlarge">01</span><br>
+            Projects Done
+        </div>
+    </div> <br>-->
+
+   
+
+    <!-- Container (Portfolio Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="portfolio">
+        <h3 class="w3-center">MY-GALLERY</h3>
+        <p class="w3-center"><em>Here are some of my latest Pics.<br> Click on the images to make
+                them bigger</em></p><br>
+
+        <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+        <div class="w3-row-padding w3-center">
+         <!--   <div class="w3-col m3">
+                <img src="IMG_4178.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="At koheda">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="IMG_4302.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="At koheda">
+            </div>-->
+             <div class="w3-col m3">
+                <img src="IMG_20220913_013151.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Aniesh and Ganesh">
+             </div>
+                
+            <div class="w3-col m3">
+                <img src="IMG_20220913_013203.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Anudeep">
+            </div>
+            
+             <div class="w3-col m3">
+                    <img src="IMG_20220913_013220.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Nikhil">
+             </div>
+
+            <div class="w3-col m3">
+                <img src="IMG_20220913_013120.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Vamshi">
+            </div>
+            
+        </div>
+
+       <div class="w3-row-padding w3-center w3-section">
+          <!--   <div class="w3-col m3">
+                <img src="IMG_20220913_013138.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Laddu">
+            </div>-->
+             <div class="w3-col m3">
+                <img src="IMG_9960.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Ortus-2022">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="IMG_20220913_013031.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Traditional day">
+            </div>
+          
+        </div>
+            
+          <!--  <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
+        
+        
+        <div class="w3-row-padding w3-center w3-section">
+            </div>-->
+    </div>
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i
+                class="fa fa-remove"></i></span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" class="w3-image">
+            <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
+    </div>
+    <!-- Container (Contact Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="contact">
+        <h3 class="w3-center">CONTACT</h3>
+        <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+        <div class="w3-row w3-padding-32 w3-section">
+            <div class="w3-col m4 w3-container">
+                <img src="photo_2022-09-13_01-53-47.jpg" class="w3-image w3-round" style="width:100%">
+            </div>
+            <div class="w3-col m8 w3-panel">
+                <div class="w3-large w3-margin-bottom">
+                    <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Hyderabad, INDIA<br>
+                    <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +918106474601<br>
+                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email:
+                    siddharthposhala020@gmail.com<br>
+                </div>
+                <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+                <form action="/action_page.php" target="_blank">
+                    <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                        </div>
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                        </div>
+                    </div>
+                    <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+                    <button class="w3-button w3-black w3-right w3-section" type="submit">
+                        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+    <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        <div class="w3-xlarge w3-section">
+            <a class="fa fa-instagram w3-hover-opacity w3-wide" style="text-decoration: none;" href="https://instagram.com/siddharth_poshala?igshid=YmMyMTA2M2Y=" target="_blank"></a>
+            <a class="fa fa-facebook-official w3-hover-opacity" style="text-decoration: none;" href="https://www.facebook.com/siddharthgoud.poshala.12" target="_blank"></a>
+            <a class="fa fa-snapchat w3-hover-opacity" style="text-decoration: none;" href="https://www.snapchat.com/add/siddarthposhala?share_id=zxd60C7xXyE&locale=en-US" target="_blank"></a>
+            <a class="fa fa-twitter w3-hover-opacity" style="text-decoration: none;" href="https://twitter.com/Siddharth_020?t=_jWsMqRBjBtsVASIeG_bjQ&s=09" target="_blank"></a>
+            <a class="fa fa-linkedin w3-hover-opacity" style="text-decoration: none;"  href="https://www.linkedin.com/in/siddharth-poshala-8b493b23a" target="_blank"></a>
+        <p>Thank You</p>
+        </div>  
+    </footer>
+
+    <script>
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+        // Change style of navbar on scroll
+        window.onscroll = function () { myFunction() };
+        function myFunction() {
+            var navbar = document.getElementById("myNavbar");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+            } else {
+                navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+            }
+        }
+
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function toggleFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
